@@ -4,13 +4,13 @@
 # macOS
 .DS_Store
 
-# Debug symbols (macOS clang)
+# Debug symbols
 *.dSYM
 
-# Compiled binaries
+# Object / output files
+*.o
 *.out
 a.out
-test
 
-# Object files
-*.os
+# Build directory
+build/

@@ -7,7 +7,7 @@
             "command": "sh",
             "args": [
                 "-c",
-                "clang \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\""
+                "mkdir -p \"${fileDirname}/build\" && clang \"${file}\" -o \"${fileDirname}/build/${fileBasenameNoExtension}\" && \"${fileDirname}/build/${fileBasenameNoExtension}\""
             ],
             "group": {
                 "kind": "build",
@@ -21,7 +21,7 @@
             "command": "sh",
             "args": [
                 "-c",
-                "clang \"${fileDirname}\"/*.c -o \"${fileDirname}/main\" && \"${fileDirname}/main\""
+                "mkdir -p \"${fileDirname}/build\" && clang \"${fileDirname}\"/*.c -o \"${fileDirname}/build/main\" && \"${fileDirname}/build/main\""
             ],
             "problemMatcher": []
         }
