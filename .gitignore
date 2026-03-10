@@ -1,0 +1,16 @@
+# VSCode local settings
+.vscode/settings.json
+
+# macOS
+.DS_Store
+
+# Debug symbols (macOS clang)
+*.dSYM
+
+# Compiled binaries
+*.out
+a.out
+test
+
+# Object files
+*.os
