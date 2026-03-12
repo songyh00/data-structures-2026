@@ -6,14 +6,14 @@
 
 int score[MAX_ELEMENTS];
 
-// 함수로 최대값 찾기
 int find_max_score(int n) {
     int i, tmp;
     tmp = score[0];
 
-    for (i = 1; i < n; i++)
+    for (i = 1; i < n; i++){
         if (score[i] > tmp)
-            tmp = score[i];
+        tmp = score[i];
+    }
 
     return tmp;
 }

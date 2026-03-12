@@ -5,9 +5,10 @@
 int ArrayMax(int A[], int n) {
     int tmp = A[0];
 
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++){
         if (tmp < A[i])
-            tmp = A[i];
+        tmp = A[i];
+    }
 
     return tmp;
 }
